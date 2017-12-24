@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    /* outline: 1px solid mediumaquamarine; */
+}
+
+.page{
+    margin: 1px auto;
+
+}
+.top{
+    width: 100%;
+    background-color: rgb(76, 94, 240);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+button{
+ 
+    border-radius: 10px;
+    
+}
+.btn_message{
+    margin-left: 5px;
+    background-color: rgb(23, 22, 166);
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+}
+.comment_btn{
+    background-color: rgb(79, 95, 240);
+    
+}
+.comment_input{
+    background-color: rgb(79, 95, 240);
+    border: none;
+}
+.comment_btn input{
+    color: white;
+}
+.top_left{
+    display: inline-block;
+    width: 90%;
+}
+.top h1{
+    margin-left: 10px;
+    color: white;
+    display: inline-block;
+}
+.logout{
+    background-color: rgb(197, 0, 32);
+    color: white;
+}
+.logout a{
+    color: white;
+}
+textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.post_image{
+    width: 100%;
+    text-align: center;
+}
+.post_create_at{
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: rgb(143, 143, 169);
+}
+.post{
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.comment{
+    color: rgb(104, 104, 114);
+}
+.create_post_btn{
+    background-color: rgb(39, 7, 88);
+    color: white;
+}
+.create_post{
+    background-color: rgb(166, 166, 175);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 480px){
+    .top h1{
+    margin-left: 10px;
+    color: white;
+    display: block;
+}
+    .middle{
+    width: 100%;
+    background-color: gainsboro;
+    display: inline-block;
+    }
+  
+    .left_side{
+        visibility: hidden;
+        height: 1px;
+    }
+    .right_side{
+        visibility: hidden;
+        height: 1px;
+    }
+
+}
+@media only screen and (min-width: 481px){
+    .middle{
+    width: 69%;
+    background-color: gainsboro;
+    display: inline-block;
+    }
+
+    .left_side{
+        visibility: hidden;
+        height: 1px;
+    }
+    .right_side{
+        visibility: visible;
+        width: 30%;
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .main{
+        width: 1024px;
+        margin: 1px auto;
+    }
+
+    .left_side{
+        width: 23%;
+        height: 200px;
+        display: inline-block;
+        vertical-align: top;
+        visibility: visible;
+    }
+    .right_side{
+        width: 23%;
+        display: inline-block;
+        vertical-align: top;
+        visibility: visible;
+    
+    }
+    .middle{
+        width: 53%;
+        background-color: gainsboro;
+        display: inline-block;
+    }
+}
+.profile{
+    height: 200px;
+    background-color: rgb(0, 107, 156);
+}
+.other_users{
+    height: 800px;
+    background-color: rgb(148, 139, 98);
+}
+.right_side{
+    background-color: rgb(148, 98, 148);
+    height: 800px;
+    vertical-align: top;
+}
+button{
+    padding: 3px;
+}

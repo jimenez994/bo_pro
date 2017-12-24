@@ -1,0 +1,125 @@
+*{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    /* outline: 1px solid black; */
+}
+
+.page{
+    margin: 20px auto;
+    background-color: rgba(229, 233, 243, 1);
+    width: 850px;
+    height: 667px;
+    padding: 10px;
+  
+}
+.register{
+    background-color: rgba(75, 96, 232, 0.7);
+    width: 300px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.login{
+    background-color: rgba(75, 96, 232, 0.7);
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input{
+    color: rgba(52, 69, 75, 0.8);
+    border-radius: 5px;
+}
+.btn{
+    margin-top: 10px;
+    background-color: rgba(74, 90, 233, 1);
+    font-size: 16px;
+    padding: 5px;
+}
+#title{
+    color: rgb(56, 55, 76);
+}
+li{
+    color: rgb(173, 10, 10);
+}
+.Mbox{
+    display: inline-block;
+    width: 202px;
+    height: 580px;
+    background-color: rgba(22, 22, 160, 1);
+    vertical-align: top;
+    border-radius: 5px;
+}
+.messages{
+    display: inline-block;
+    color: rgb(173, 10, 10);  
+}
+fieldset{
+    border-radius: 5px;
+}
+#forgot_password{
+    font-size: 13px;
+}
+@media only screen and (max-width: 480px){
+    .page{
+        width: 100%;
+    }
+    .Mbox{
+        visibility: hidden;
+        height: 0px;
+        display: block;
+    }
+    .login{
+        width: 100%;
+    }
+    .register{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 481px){
+    .page{
+        width: 100%;
+    }
+    .Mbox{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+        display: block;
+    }
+    .login{
+        width: 46%;
+        display: inline-block;
+    }
+    .register{
+        width: 46%;
+        display: inline-block;
+    }
+  
+}
+@media only screen and (min-width: 1024px){
+    .page{
+        width: 850px;
+        
+    }
+    .Mbox{
+        visibility: visible;
+        display: inline-block;
+        width: 202px;
+        height: 580px;
+       
+    }
+    .register{
+   
+    width: 300px;
+    padding: 10px;
+    display: inline-block;
+    }
+    .login{
+   
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    }
+}
