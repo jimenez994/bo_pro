@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <div class="page">
         <div class="top">
             <div class="top_left">
@@ -20,7 +20,7 @@
                 <a href="/messages"><button class="btn_message">Messages</button></a>
                 <a href="/profile/{{user.id}}"><button class="btn_message">Profile</button></a>
             </div>
-            
+
             <button class="logout"><a href="/logout">Logout</a></button>
         </div>
 
@@ -29,8 +29,8 @@
                 <div class="profile">
                     <p>{{ user.first_name }} {{ user.last_name }}</p>
                 </div>
-            
-                
+
+
                 <div class="other_users">
                     <h4>Other Users</h4>
                     {% for user in users %}
@@ -40,38 +40,38 @@
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
-                </div> 
+                </div>
             </div>
-            
-                
-            
+
+
+
             <div class="middle">
                     <!-- post text area -->
                 <div class="create_post">
                     <h4>Share something here: <a href="/upload/{{user.id}}"><button class="create_post_btn"> Create post</button></a></h4>
                 </div>
-                
-                
-            
+
+
+
 
                 <!-- Posts -->
-            
+
                 <hr>
             <div class="post">
                 {% for post in posts %}
                     {% for user in all_users %}
-                    
+
                         {% if post.post_by_id == user.id %}
-                            
+
                             <p ><a href="/profile/{{user.id}}">{{ user.first_name}}:</a></p>
-                            <p>{{ post.content }}</p>
+                            <p style="white-space: pre">{{ post.content }}</p>
                             <p class="post_create_at">{{ post.created_at }}</p>
                             {% if post.image.url != null%}
                             <div class="post_image">
                                 <a href="{{ post.image.url }}"><img src="{{ post.image.url }}" alt="image "></a><br>
                             </div>
                              {% endif %}
-                           
+
                             {% for comment in comments %}
                                 {% if comment.comment_to_id == post.id %}
                                     <p class="comment"><a href="/profile/{{user.id}}">{{user.first_name}}: </a> {{ comment.comment }}</p>
@@ -83,9 +83,9 @@
                                 <button class="comment_btn"><input class="comment_input" type="submit" value="Comment"></button>
                             </form>
                             <hr>
-                            
+
                         {% endif %}
-                    {% endfor %}  
+                    {% endfor %}
                 {% endfor %}
             </div>
 
@@ -96,16 +96,16 @@
                         {% if friend.friends_with_id == user.id %}
                             <p><a href="/profile/{{user.id}}">{{ user.first_name }}</a></p>
                         {% endif %}
-                    {% endfor %}                
+                    {% endfor %}
                 {% endfor %}
             </div>
-            
 
 
 
-        </div>  
+
+        </div>
     </div>
-        
+
 </body>
 
 </html>
